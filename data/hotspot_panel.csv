@@ -1,0 +1,12 @@
+gene,protein_change,variant_type,associated_cancers,clinical_significance,notes
+BRAF,p.Val600Glu,missense,"Melanoma, cáncer colorrectal, cáncer de tiroides",Pathogenic,Hotspot más frecuente de BRAF; diana de inhibidores de BRAF (vemurafenib, dabrafenib)
+EGFR,p.Leu858Arg,missense,"Cáncer de pulmón no microcítico (NSCLC)",Pathogenic,Mutación activadora clásica; predice respuesta a inhibidores de EGFR (gefitinib, erlotinib)
+EGFR,p.Thr790Met,missense,"Cáncer de pulmón no microcítico (NSCLC)",Pathogenic,Mutación de resistencia adquirida a inhibidores de EGFR de primera generación
+KRAS,p.Gly12Asp,missense,"Cáncer colorrectal, cáncer de páncreas, NSCLC",Pathogenic,Uno de los hotspots más comunes en tumores sólidos; asociado a resistencia a anti-EGFR
+KRAS,p.Gly12Val,missense,"Cáncer colorrectal, cáncer de páncreas, NSCLC",Pathogenic,Hotspot frecuente en el codón 12 de KRAS
+KRAS,p.Gly13Asp,missense,"Cáncer colorrectal",Pathogenic,Hotspot en el codón 13; relevancia terapéutica distinta a G12 en colorrectal
+NRAS,p.Gln61Arg,missense,Melanoma,Pathogenic,Hotspot recurrente del codón 61 de NRAS en melanoma
+PIK3CA,p.His1047Arg,missense,"Cáncer de mama, otros tumores sólidos",Pathogenic,Uno de los hotspots más comunes en el dominio quinasa de PIK3CA
+PIK3CA,p.Glu545Lys,missense,"Cáncer de mama, otros tumores sólidos",Pathogenic,Hotspot recurrente en el dominio helicoidal de PIK3CA
+TP53,p.Arg175His,missense,"Múltiples tumores sólidos y hematológicos",Pathogenic,Uno de los hotspots más frecuentes de TP53; efecto dominante-negativo descrito
+IDH1,p.Arg132His,missense,"Glioma, leucemia mieloide aguda",Pathogenic,Hotspot clásico de IDH1; diana de inhibidores específicos (ivosidenib)

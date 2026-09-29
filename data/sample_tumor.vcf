@@ -1,0 +1,19 @@
+##fileformat=VCFv4.2
+##source=tumor-hotspot-ngs-synthetic-generator
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=HGVS_P,Number=1,Type=String,Description="Protein change (HGVS p. notation)">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allelic depths for ref and alt alleles">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	TUMOR_SAMPLE
+chr7	140753336	.	A	T	60	PASS	GENE=BRAF;HGVS_P=p.Val600Glu	GT:AD:DP	0/1:45,55:100
+chr7	55191822	.	T	G	60	PASS	GENE=EGFR;HGVS_P=p.Leu858Arg	GT:AD:DP	0/1:60,40:100
+chr12	25245350	.	C	T	60	PASS	GENE=KRAS;HGVS_P=p.Gly12Asp	GT:AD:DP	0/1:50,50:100
+chr3	178952085	.	A	G	60	PASS	GENE=PIK3CA;HGVS_P=p.His1047Arg	GT:AD:DP	0/1:70,30:100
+chr17	7577120	.	C	T	60	PASS	GENE=TP53;HGVS_P=p.Arg175His	GT:AD:DP	0/1:65,35:100
+chr1	114716126	.	C	T	60	PASS	GENE=NRAS;HGVS_P=p.Gln61Arg	GT:AD:DP	0/1:97,3:100
+chr7	140753301	.	G	A	60	PASS	GENE=BRAF;HGVS_P=p.Asp594Asn	GT:AD:DP	0/1:80,20:100
+chr12	25245347	.	G	A	60	PASS	GENE=KRAS;HGVS_P=p.Ala11Thr	GT:AD:DP	0/1:75,25:100
+chr17	7577558	.	G	A	60	PASS	GENE=TP53;HGVS_P=p.Pro72Leu	GT:AD:DP	0/1:90,10:100
+chr2	29223528	.	C	G	60	PASS	GENE=ALK;HGVS_P=p.Phe1174Leu	GT:AD:DP	0/1:85,15:100
+chr9	21971120	.	C	T	60	PASS	GENE=CDKN2A;HGVS_P=p.Arg80*	GT:AD:DP	0/1:88,12:100

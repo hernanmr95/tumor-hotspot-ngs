@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-and-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Correr tests unitarios
+        run: pytest tests/ -v
+
+      - name: Ejecutar pipeline con la muestra de ejemplo
+        run: |
+          python run_pipeline.py \
+            --vcf data/sample_tumor.vcf \
+            --panel data/hotspot_panel.csv \
+            --sample-name "CI_DEMO" \
+            --outdir results_ci/
+
+      - name: Subir informe como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-report
+          path: results_ci/
